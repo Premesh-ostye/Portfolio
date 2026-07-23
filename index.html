@@ -1,226 +1,1100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Premesh | IT Support & App Developer</title>
-  <link rel="stylesheet" href="main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <meta
+    name="description"
+    content="Premesh Wasti builds websites, mobile apps and custom software, and creates candid hospitality photography in Sydney."
+  >
+
+  <meta name="theme-color" content="#050706">
+
+  <title>
+    Premesh Wasti | Software Developer, Product Builder & Photographer
+  </title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
-  <header class="modern-header">
-    <div class="logo">Premesh<span class="underscore">_</span></div>
-    <nav class="nav-links">
-      <a href="#home">Home</a>
+  <!-- Header -->
+  <header class="site-header">
+
+    <a
+      href="#home"
+      class="logo"
+      aria-label="Premesh Wasti homepage"
+    >
+      Premesh<span>_</span>
+    </a>
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="mainNavigation"
+    >
+      <span class="menu-icon"></span>
+      <span class="menu-icon"></span>
+      <span class="menu-icon"></span>
+    </button>
+
+    <nav
+      class="nav-links"
+      id="mainNavigation"
+      aria-label="Main navigation"
+    >
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#photography">Photography</a>
       <a href="#services">Services</a>
-      <a href="#testimonials">Testimonials</a>
+      <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
-      <a href="https://github.com/Premesh-ostye" target="_blank">GitHub</a>
+
+      <a
+        href="https://github.com/Premesh-ostye"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
     </nav>
+
   </header>
 
-  <div class="main-container">
-    <div class="card terminal-card" id="home" data-aos="zoom-in">
-      <h1 class="terminal-text"><span class="typed">> Hi, I’m </span><span class="name">&nbsp; Premesh_Wasti</span><span class="cursor">|</span></h1>
-      <h2 class="role">IT Support | Mobile App Developer</h2>
-      <p class="desc">Building practical apps, solving technical problems, and creating user-focused digital experiences.</p>
-      <div class="button-group">
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="https://raw.githubusercontent.com/Premesh-ostye/Portfolio/main/Premesh_Wasti_Resume.pdf" class="btn" download>Download Resume</a>
-        <a href="https://github.com/Premesh-ostye" class="btn social" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/premesh-wasti-83483b266/" class="btn social" target="_blank">LinkedIn</a>
-      </div>
-    </div>
+  <main class="main-container">
 
-    <!-- About Me -->
-    <div class="card" id="about" data-aos="fade-up">
-      <h3 class="terminal-text">> about --me</h3>
-      <p>I'm Premesh, an IT graduate with a background in mobile application development and hands-on experience in programming, debugging, and system troubleshooting. Alongside building apps and UI/UX designs, I’ve also supported real-world systems in fast-paced hospitality environments, solving POS and operational issues under pressure.</p>
-    </div>
+    <!-- Hero -->
+    <section
+      class="card hero"
+      id="home"
+      data-aos="fade-up"
+    >
+      <p class="terminal-heading hero-intro">
+        <span>&gt;</span>
+        Hi, I’m
+        <span class="highlight typed-name">
+          Premesh Wasti
+        </span>
+        <span class="cursor">|</span>
+      </p>
+
+      <h1>
+        Software Developer &amp; Product Builder
+      </h1>
+
+      <p class="hero-description">
+        I design and build websites, mobile apps and custom software that solve
+        real business problems. I also capture candid people, places and
+        hospitality moments through photography.
+      </p>
+
+      <div class="availability">
+        <span class="status-dot"></span>
+
+        <span>
+          Available for software, website, app and photography projects
+        </span>
+      </div>
+
+      <div class="button-group">
+
+        <a
+          href="#projects"
+          class="btn btn-primary"
+        >
+          View My Work
+        </a>
+
+        <a
+          href="#photography"
+          class="btn"
+        >
+          View Photography
+        </a>
+
+        <a
+          href="#contact"
+          class="btn"
+        >
+          Start a Project
+        </a>
+
+        <a
+          href="Premesh_Wasti_Resume.pdf"
+          class="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Resume
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/premesh-wasti-83483b266/"
+          class="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section
+      class="card"
+      id="about"
+      data-aos="fade-up"
+    >
+      <p class="terminal-heading">
+        <span>&gt;</span>
+        about --me
+      </p>
+
+      <div class="about-grid">
+
+        <div>
+          <h2>
+            I build practical digital products.
+          </h2>
+
+          <p>
+            I’m Premesh, a software developer focused on turning real-world
+            problems into useful digital products. My work includes mobile
+            applications, responsive websites, business systems, Firebase
+            integrations and UI/UX prototypes.
+          </p>
+
+          <p>
+            My hospitality management and systems-support experience has taught
+            me how to troubleshoot under pressure, understand business
+            operations and create solutions around real user needs.
+          </p>
+
+          <p>
+            Alongside development, I enjoy candid and hospitality photography,
+            capturing genuine moments, atmosphere and people in natural
+            environments.
+          </p>
+        </div>
+
+        <div class="quick-details">
+
+          <div>
+            <span>Location</span>
+            <strong>Sydney, Australia</strong>
+          </div>
+
+          <div>
+            <span>Development</span>
+            <strong>Web, mobile and software</strong>
+          </div>
+
+          <div>
+            <span>Creative</span>
+            <strong>Photography and UI/UX</strong>
+          </div>
+
+          <div>
+            <span>Approach</span>
+            <strong>Design. Develop. Maintain.</strong>
+          </div>
+
+          <div>
+            <span>Portfolio</span>
+            <strong>premesh.pro</strong>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <!-- Skills -->
-    <div class="skills-terminal" data-aos="fade-up">
-      <div class="nav-buttons">
+    <section
+      class="terminal-window"
+      data-aos="fade-up"
+    >
+
+      <div
+        class="window-controls"
+        aria-hidden="true"
+      >
         <span class="red"></span>
         <span class="yellow"></span>
         <span class="green"></span>
       </div>
-      <pre>> skills --list</pre>
-      <code>
-        <span><i class="fab fa-java"></i> Java</span>
-        <span><i class="fab fa-react"></i> React Native</span>
-        <span><i class="fab fa-html5"></i> HTML</span>
-        <span><i class="fab fa-css3-alt"></i> CSS</span>
-        <span><i class="fab fa-js-square"></i> JavaScript</span>
-        <span><i class="fab fa-apple"></i> Xcode</span>
-        <span><i class="fab fa-github"></i> Git & GitHub</span>
-        <span><i class="fas fa-database"></i> Firebase</span>
-        <span><i class="fas fa-bug"></i> Debugging</span>
-        <span><i class="fas fa-tools"></i> Troubleshooting</span>
-        <span><i class="fas fa-pencil-ruler"></i> Figma</span>
-        <span><i class="fas fa-cash-register"></i> POS Systems</span>
-      </code>
-    </div>
-    </br>
 
-    <!-- Services -->
-    <div class="card" id="services" data-aos="fade-up">
-      <h3 class="terminal-text">> services --offered</h3>
-      <ul>
-        <li>📱 Mobile App Development (iOS & Android)</li>
-        <li>🌐 Website Design & Development</li>
-        <li>🚀 UI/UX Prototyping & Wireframing</li>
-        <li>☁️ Firebase Integration</li>
-        <li>🛠️ IT Support & Technical Troubleshooting</li>
-        
-      </ul>
-    </div>
+      <p class="terminal-command">
+        &gt; skills --list
+      </p>
+
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Development</h3>
+
+          <div class="tags">
+            <span>JavaScript</span>
+            <span>Java</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>React Native</span>
+            <span>Firebase</span>
+            <span>ASP.NET</span>
+            <span>C#</span>
+            <span>SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Tools</h3>
+
+          <div class="tags">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Xcode</span>
+            <span>Figma</span>
+            <span>VS Code</span>
+            <span>Lightroom</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Technical &amp; Creative</h3>
+
+          <div class="tags">
+            <span>Debugging</span>
+            <span>Troubleshooting</span>
+            <span>POS Systems</span>
+            <span>UI/UX</span>
+            <span>System Design</span>
+            <span>Photography</span>
+            <span>Photo Editing</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-- Projects -->
-    <div class="card" id="projects" data-aos="fade-up">
-      <h3 class="terminal-text">> projects --list</h3>
-      <div class="project-list-horizontal">
+    <section
+      class="card"
+      id="projects"
+      data-aos="fade-up"
+    >
 
-        <div class="project">
-          <h4>📱 SnapWake</h4>
-          <p>An alarm app that forces users to take a photo of their kitchen to stop the alarm, helping users wake up on time through real-world interaction.</p>
-          <p><strong>Tech:</strong> React Native, Firebase</p>
-          <a href="https://github.com/Premesh-ostye" target="_blank" class="btn">View Code</a>
+      <div class="section-heading">
+
+        <div>
+          <p class="terminal-heading">
+            <span>&gt;</span>
+            projects --featured
+          </p>
+
+          <h2>
+            Products and systems I’ve built
+          </h2>
         </div>
 
-        <div class="project">
-          <h4>📱 FairSplit</h4>
-          <p>A bill-splitting and shared-expense tracking app that makes group payments simple, clear, and fair.</p>
-          <p><strong>Tech:</strong> React Native, Firebase</p>
-          <a href="https://github.com/Premesh-ostye" target="_blank" class="btn">View Code</a>
-        </div>
+        <a
+          href="https://github.com/Premesh-ostye"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-link"
+        >
+          View GitHub →
+        </a>
 
-        <div class="project">
-          <h4>🛒 Wrapko Website</h4>
-          <p>A modern eCommerce website for selling laptop and phone skins with a clean and responsive design.</p>
-          <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-          <a href="https://github.com/Premesh-ostye" target="_blank" class="btn">View Code</a>
-        </div>
+      </div>
 
-        <div class="project">
-          <h4>🎨 UI/UX Design Projects</h4>
-          <p>Created multiple high-fidelity UI/UX designs in Figma, including mobile app screens, dashboards, user flows, wireframes, and interactive prototypes.</p>
-          <p><strong>Tech:</strong> Figma, Prototyping, Wireframing</p>
-          <a href="https://www.figma.com/proto/L7VM6gPZph5QYt8T3pmBUu/Haps?node-id=69-78&starting-point-node-id=69%3A78" target="_blank" class="btn">View Designs</a>
-        </div>
+      <div class="project-grid">
 
-        <div class="project">
-          <h4>🍺 Pub Membership Management System</h4>
-          <p>Designed a membership system concept for pub customers to support registration, customer tracking, and loyalty-based engagement features.</p>
-          <p><strong>Tech:</strong> System Design, Data Management, UI Planning</p>
-          <a href="#" class="btn">View Project</a>
+        <article class="project featured-project">
+
+          <div class="project-top">
+            <span class="project-type">
+              Mobile application
+            </span>
+
+            <span class="project-number">
+              01
+            </span>
+          </div>
+
+          <h3>SnapWake</h3>
+
+          <p>
+            An alarm application that requires users to photograph a selected
+            location before the alarm can be dismissed, encouraging users to
+            physically get out of bed.
+          </p>
+
+          <div class="project-tags">
+            <span>React Native</span>
+            <span>Firebase</span>
+            <span>Mobile UX</span>
+          </div>
+
+          <div class="project-actions">
+            <a
+              href="https://github.com/Premesh-ostye"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn small"
+            >
+              View Code
+            </a>
+          </div>
+
+        </article>
+
+        <article class="project">
+
+          <div class="project-top">
+            <span class="project-type">
+              Finance application
+            </span>
+
+            <span class="project-number">
+              02
+            </span>
+          </div>
+
+          <h3>FairSplit</h3>
+
+          <p>
+            A shared-expense application that makes it easier for groups to
+            record bills, calculate balances and manage repayments.
+          </p>
+
+          <div class="project-tags">
+            <span>React Native</span>
+            <span>Firebase</span>
+            <span>Authentication</span>
+          </div>
+
+          <div class="project-actions">
+            <a
+              href="https://github.com/Premesh-ostye"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn small"
+            >
+              View Code
+            </a>
+          </div>
+
+        </article>
+
+        <article class="project">
+
+          <div class="project-top">
+            <span class="project-type">
+              Business platform
+            </span>
+
+            <span class="project-number">
+              03
+            </span>
+          </div>
+
+          <h3>Job Assignment Platform</h3>
+
+          <p>
+            A multi-tenant platform where venues assign jobs to contractors,
+            receive completion photos, approve work and manage invoices.
+          </p>
+
+          <div class="project-tags">
+            <span>React</span>
+            <span>Firebase</span>
+            <span>Workflow Design</span>
+          </div>
+
+          <div class="project-actions">
+            <span class="project-status">
+              In development
+            </span>
+          </div>
+
+        </article>
+
+        <article class="project">
+
+          <div class="project-top">
+            <span class="project-type">
+              Web system
+            </span>
+
+            <span class="project-number">
+              04
+            </span>
+          </div>
+
+          <h3>Survey &amp; Respondent System</h3>
+
+          <p>
+            A conditional survey and respondent-management platform with
+            registration, question branching and advanced staff search tools.
+          </p>
+
+          <div class="project-tags">
+            <span>ASP.NET</span>
+            <span>C#</span>
+            <span>SQL</span>
+          </div>
+
+          <div class="project-actions">
+            <span class="project-status">
+              Case study
+            </span>
+          </div>
+
+        </article>
+
+        <article class="project">
+
+          <div class="project-top">
+            <span class="project-type">
+              Website
+            </span>
+
+            <span class="project-number">
+              05
+            </span>
+          </div>
+
+          <h3>Wrapko</h3>
+
+          <p>
+            A responsive e-commerce website concept for laptop and mobile-phone
+            skins, focused on product discovery and a clean purchasing flow.
+          </p>
+
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="project-actions">
+            <a
+              href="https://github.com/Premesh-ostye"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn small"
+            >
+              View Code
+            </a>
+          </div>
+
+        </article>
+
+        <article class="project">
+
+          <div class="project-top">
+            <span class="project-type">
+              Product design
+            </span>
+
+            <span class="project-number">
+              06
+            </span>
+          </div>
+
+          <h3>HAPS UI/UX</h3>
+
+          <p>
+            A high-fidelity hospitality application prototype covering mobile
+            screens, user flows, dashboards and interactive navigation.
+          </p>
+
+          <div class="project-tags">
+            <span>Figma</span>
+            <span>Prototyping</span>
+            <span>Wireframing</span>
+          </div>
+
+          <div class="project-actions">
+            <a
+              href="https://www.figma.com/proto/L7VM6gPZph5QYt8T3pmBUu/Haps?node-id=69-78&starting-point-node-id=69%3A78"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn small"
+            >
+              View Prototype
+            </a>
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Photography -->
+    <section
+      class="card photography-section"
+      id="photography"
+      data-aos="fade-up"
+    >
+
+      <div class="section-heading">
+
+        <div>
+          <p class="terminal-heading">
+            <span>&gt;</span>
+            photography --gallery
+          </p>
+
+          <h2>Photography</h2>
+
+          <p class="section-description">
+            Candid moments, people and atmosphere captured through my lens.
+          </p>
         </div>
 
       </div>
-    </div>
 
-    <!-- Testimonials -->
-    <div class="card" id="testimonials" data-aos="fade-up">
-      <h3 class="terminal-text">> testimonials --feedback</h3>
-      <blockquote>“Premesh delivered beyond expectations. Quick, clean and professional.” – Client A</blockquote>
-      <blockquote>“He turned my messy idea into a working app within days. Legend!” – Class Mate</blockquote>
-    </div>
+      <div class="photography-grid">
 
-    <!-- Timeline -->
-    <div class="card timeline" data-aos="fade-up">
-      <h3>> timeline --experience</h3>
+        <!-- Photograph 1 -->
+        <figure class="photo-card">
 
-      <div class="timeline-entry">
-        <h4>2026 – Present</h4>
-        <p>Masters in Information Systems – King’s Own Institute</p>
+          <button
+            class="photo-button"
+            type="button"
+            data-full-image="DSC_0211.JPG"
+            aria-label="Open Quiet Conversation photograph"
+          >
+            <img
+              src="DSC_0211.JPG"
+              alt="Candid portrait of a man seated at a pub table"
+              loading="lazy"
+              decoding="async"
+            >
+          </button>
+
+          <figcaption>
+            <div>
+              <h3>Quiet Conversation</h3>
+              <p>Candid Portrait</p>
+            </div>
+
+            <span>01</span>
+          </figcaption>
+
+        </figure>
+
+        <!-- Photograph 2 -->
+        <figure class="photo-card">
+
+          <button
+            class="photo-button"
+            type="button"
+            data-full-image="DSC_0212.JPG"
+            aria-label="Open Behind the Bar photograph"
+          >
+            <img
+              src="DSC_0212.JPG"
+              alt="Two friends smiling together behind a bar under blue lighting"
+              loading="lazy"
+              decoding="async"
+            >
+          </button>
+
+          <figcaption>
+            <div>
+              <h3>Behind the Bar</h3>
+              <p>People &amp; Hospitality</p>
+            </div>
+
+            <span>02</span>
+          </figcaption>
+
+        </figure>
+
+        <!-- Photograph 3 -->
+        <figure class="photo-card">
+
+          <button
+            class="photo-button"
+            type="button"
+            data-full-image="DSC_0217.JPG"
+            aria-label="Open The Shot photograph"
+          >
+            <img
+              src="DSC_0217.JPG"
+              alt="A person lining up a shot on a pool table inside a pub"
+              loading="lazy"
+              decoding="async"
+            >
+          </button>
+
+          <figcaption>
+            <div>
+              <h3>The Shot</h3>
+              <p>Documentary Photography</p>
+            </div>
+
+            <span>03</span>
+          </figcaption>
+
+        </figure>
+
+        <!-- Photograph 4 -->
+        <figure class="photo-card">
+
+          <button
+            class="photo-button"
+            type="button"
+            data-full-image="DSC_0229.JPG"
+            aria-label="Open Night Reflection photograph"
+          >
+            <img
+              src="DSC_0229.JPG"
+              alt="A man holding a drink beside a reflective window in a dimly lit venue"
+              loading="lazy"
+              decoding="async"
+            >
+          </button>
+
+          <figcaption>
+            <div>
+              <h3>Night Reflection</h3>
+              <p>Low-Light Portrait</p>
+            </div>
+
+            <span>04</span>
+          </figcaption>
+
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section
+      class="card"
+      id="services"
+      data-aos="fade-up"
+    >
+      <p class="terminal-heading">
+        <span>&gt;</span>
+        services --available
+      </p>
+
+      <h2>
+        How I can help
+      </h2>
+
+      <div class="services-grid">
+
+        <article class="service">
+          <span class="service-number">01</span>
+
+          <h3>Website Development</h3>
+
+          <p>
+            Responsive business websites, landing pages and portfolios designed
+            to communicate your value and generate enquiries.
+          </p>
+        </article>
+
+        <article class="service">
+          <span class="service-number">02</span>
+
+          <h3>Mobile Applications</h3>
+
+          <p>
+            Cross-platform mobile applications with thoughtful user journeys,
+            Firebase services and maintainable interfaces.
+          </p>
+        </article>
+
+        <article class="service">
+          <span class="service-number">03</span>
+
+          <h3>Custom Software</h3>
+
+          <p>
+            Internal tools, workflow systems and practical software designed
+            around the way your business operates.
+          </p>
+        </article>
+
+        <article class="service">
+          <span class="service-number">04</span>
+
+          <h3>UI/UX Prototyping</h3>
+
+          <p>
+            Wireframes and interactive Figma prototypes for validating ideas
+            before development begins.
+          </p>
+        </article>
+
+        <article class="service">
+          <span class="service-number">05</span>
+
+          <h3>Business Automation</h3>
+
+          <p>
+            Digital workflows and integrations that reduce repetitive tasks and
+            improve visibility across operations.
+          </p>
+        </article>
+
+        <article class="service">
+          <span class="service-number">06</span>
+
+          <h3>Photography</h3>
+
+          <p>
+            Candid portraits, hospitality photography, venue atmosphere and
+            lifestyle images for businesses and personal projects.
+          </p>
+        </article>
+
+        <article class="service">
+          <span class="service-number">07</span>
+
+          <h3>Maintenance &amp; Support</h3>
+
+          <p>
+            Technical troubleshooting, system improvements and ongoing support
+            after your website or application has launched.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section
+      class="card"
+      id="experience"
+      data-aos="fade-up"
+    >
+      <p class="terminal-heading">
+        <span>&gt;</span>
+        timeline --experience
+      </p>
+
+      <div class="timeline">
+
+        <article class="timeline-entry">
+
+          <div class="timeline-date">
+            2026 — Present
+          </div>
+
+          <div>
+            <h3>
+              Master of Information Systems
+            </h3>
+
+            <p>
+              King’s Own Institute
+            </p>
+          </div>
+
+        </article>
+
+        <article class="timeline-entry">
+
+          <div class="timeline-date">
+            2023 — Present
+          </div>
+
+          <div>
+            <h3>
+              Pub Manager &amp; Systems Support
+            </h3>
+
+            <p>
+              The Hornsby Inn — operations, POS troubleshooting, staff support
+              and technical problem-solving.
+            </p>
+          </div>
+
+        </article>
+
+        <article class="timeline-entry">
+
+          <div class="timeline-date">
+            2022 — 2026
+          </div>
+
+          <div>
+            <h3>
+              Bachelor of Technology
+            </h3>
+
+            <p>
+              Academy of Interactive Technology
+            </p>
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Statistics -->
+    <section
+      class="stats"
+      data-aos="fade-up"
+      aria-label="Portfolio statistics"
+    >
+
+      <article>
+        <strong>5+</strong>
+        <span>Projects built</span>
+      </article>
+
+      <article>
+        <strong>3+</strong>
+        <span>Applications developed</span>
+      </article>
+
+      <article>
+        <strong>Multiple</strong>
+        <span>UI/UX prototypes</span>
+      </article>
+
+      <article>
+        <strong>Growing</strong>
+        <span>Photography collection</span>
+      </article>
+
+    </section>
+
+    <!-- Contact -->
+    <section
+      class="card contact-section"
+      id="contact"
+      data-aos="fade-up"
+    >
+
+      <div class="contact-copy">
+
+        <p class="terminal-heading">
+          <span>&gt;</span>
+          contact --start-project
+        </p>
+
+        <h2>
+          Have a project, business problem or photography enquiry?
+        </h2>
+
+        <p>
+          Tell me what you’re trying to build, improve, automate or photograph.
+          I’ll respond with a practical next step.
+        </p>
+
+        <div class="contact-details">
+
+          <a href="mailto:premeshostye@gmail.com">
+            premeshostye@gmail.com
+          </a>
+
+          <a href="tel:+61402134595">
+            +61 402 134 595
+          </a>
+
+          <span>
+            Sydney, Australia
+          </span>
+
+        </div>
       </div>
 
-      <div class="timeline-entry">
-        <h4>2023 – Present</h4>
-        <p>Pub Manager / Systems Support – The Hornsby Inn</p>
-      </div>
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mwkgykek"
+        method="POST"
+      >
 
-      <div class="timeline-entry">
-        <h4>2022 – 2026</h4>
-        <p>Bachelor of Technology – Academy of Interactive Technology</p>
-      </div>
+        <label for="name">
+          Name
+        </label>
 
-      <div class="timeline-entry">
-        <h4>2022 – Present</h4>
-        <p>Bartender– The Hornsby Inn</p>
-      </div>
-    </div>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Your name"
+          autocomplete="name"
+          required
+        >
 
-    <!-- Fun Facts -->
-    <div class="fun-facts" data-aos="fade-up">
-      <div class="fact">🛠️ Projects Built: 5+</div>
-      <div class="fact">🎨 Figma Designs: Multiple</div>
-      <div class="fact">📱 Apps Developed: 3+</div>
-    </div>
+        <label for="email">
+          Email
+        </label>
 
-    <!-- Contact Form -->
-    <div class="contact-form" id="contact" data-aos="fade-up">
-      <h3>> contact --send-message</h3>
-      <form action="https://formspree.io/f/mwkgykek" method="POST">
-        <input type="text" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
-        <button type="submit">Send</button>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="you@example.com"
+          autocomplete="email"
+          inputmode="email"
+          required
+        >
+
+        <label for="projectType">
+          What do you need?
+        </label>
+
+        <select
+          id="projectType"
+          name="project_type"
+        >
+          <option value="Website">
+            Website
+          </option>
+
+          <option value="Mobile application">
+            Mobile application
+          </option>
+
+          <option value="Custom software">
+            Custom software
+          </option>
+
+          <option value="UI/UX design">
+            UI/UX design
+          </option>
+
+          <option value="Photography">
+            Photography
+          </option>
+
+          <option value="Technical support">
+            Technical support
+          </option>
+
+          <option value="Other">
+            Other
+          </option>
+        </select>
+
+        <label for="message">
+          Project details
+        </label>
+
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          placeholder="Tell me about your project, goals and timeline..."
+          required
+        ></textarea>
+
+        <button type="submit">
+          Send Message
+        </button>
+
       </form>
-    </div>
-  </div>
+    </section>
 
-  <footer class="modern-footer">
-    <p>&copy; 2025 Premesh Wasti — Built with 💻 & ☕</p>
-    <div class="footer-links">
-      <a href="mailto:premeshostye@gmail.com">Email Me</a>
-      <a href="https://www.linkedin.com/in/premesh-wasti-83483b266/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/Premesh-ostye" target="_blank">GitHub</a>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <p>
+      © <span id="currentYear"></span>
+      Premesh Wasti. Built in Sydney.
+    </p>
+
+    <div>
+      <a href="mailto:premeshostye@gmail.com">
+        Email
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/premesh-wasti-83483b266/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+
+      <a
+        href="https://github.com/Premesh-ostye"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
     </div>
+
   </footer>
 
-  <button onclick="scrollToTop()" class="top-btn" title="Go to top">↑</button>
+  <!-- Scroll to top -->
+  <button
+    type="button"
+    class="top-button"
+    id="topButton"
+    aria-label="Scroll to top"
+  >
+    ↑
+  </button>
+
+  <!-- Photography lightbox -->
+  <div
+    class="photo-lightbox"
+    id="photoLightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Photography image viewer"
+    hidden
+  >
+    <button
+      class="lightbox-close"
+      id="lightboxClose"
+      type="button"
+      aria-label="Close image viewer"
+    >
+      ×
+    </button>
+
+    <img
+      id="lightboxImage"
+      src=""
+      alt=""
+    >
+  </div>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, offset: 100 });
 
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function typeWriterAll() {
-      const elements = document.querySelectorAll('.typed');
-      elements.forEach((el, index) => {
-        const text = el.textContent;
-        el.textContent = '';
-        let i = 0;
-        function type() {
-          if (i < text.length) {
-            el.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, 25);
-          }
-        }
-        setTimeout(type, 300 * index);
-      });
-    }
-
-    window.onload = () => {
-      typeWriterAll();
-    };
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
+  
 </body>
 </html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
